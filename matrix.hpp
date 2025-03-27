@@ -8,6 +8,7 @@ class Matrix {
 public:
     Matrix(std::size_t N);
     Matrix(std::vector<std::vector<int>> nums);
+    ~Matrix();
 
     Matrix operator+(const Matrix &rhs) const;
     Matrix operator*(const Matrix &rhs) const;
