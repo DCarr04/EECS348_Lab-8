@@ -24,7 +24,8 @@ Matrix::~Matrix(){
 // e.g. for a member function:
 
 Matrix Matrix::operator+(const Matrix &rhs) const{
-    //Matrix sum_Matrix(rhs.size)
+    Matrix sum_Matrix(rhs.size);
+    
 }
 
 void Matrix::set_value(size_t i, size_t j, int n){

@@ -1,7 +1,7 @@
 CC := gcc
 CFLAGS := -O1 -Wall
 
-matrix.exe: temperature.o temperature_main.o# fill in files here
+matrix.exe: matrix.o main.o# fill in files here
 	# fill in commands here
 	$(CC) $(CFLAGS) $^ -o $@
 
@@ -12,3 +12,4 @@ matrix.exe: temperature.o temperature_main.o# fill in files here
 clean:
 	rm -f *.exe
 	rm -f matrix.exe
+	rm -f main.exe
