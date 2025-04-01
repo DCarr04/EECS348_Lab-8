@@ -34,6 +34,10 @@ int Matrix::get_value(size_t i, size_t j) const{
     return data[i][j];
 }
 
+int Matrix::get_size() const{
+    return size;
+}
+
 void Matrix::print_matrix() const {
     // print out the matrix
 }
