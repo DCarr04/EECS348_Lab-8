@@ -62,6 +62,12 @@ int Matrix::sum_diagonal_minor() const{
     return total;
 }
 
+void Matrix::swap_rows(size_t r1, size_t r2){
+    vector<int> row1 = data[r1];
+    data[r1] = data[r2];
+    data[r2] = row1;
+}
+
 void Matrix::print_matrix() const {
     // print out the matrix
 }
