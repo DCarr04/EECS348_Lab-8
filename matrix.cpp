@@ -38,6 +38,19 @@ int Matrix::get_size() const{
     return size;
 }
 
+int Matrix::sum_diagonal_major() const{
+    int total = 0;
+    int rowCounter = size - 1;
+    //int bottom_left = data[size - 1][0];
+
+    for(int i = 0; i < size; i++){
+        total += data[rowCounter][i];
+
+        --rowCounter; 
+    }
+    //int top
+}
+
 void Matrix::print_matrix() const {
     // print out the matrix
 }
