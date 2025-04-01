@@ -68,6 +68,15 @@ void Matrix::swap_rows(size_t r1, size_t r2){
     data[r2] = row1;
 }
 
+void Matrix::swap_cols(size_t c1, size_t c2){
+    int element;
+    for(int i = 0; i < size; i++){
+        element = data[i][c1];
+        data[i][c1] = data[i][c2];
+        data[i][c2] = element;
+    }
+}
+
 void Matrix::print_matrix() const {
     // print out the matrix
 }
