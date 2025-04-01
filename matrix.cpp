@@ -27,7 +27,11 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
 }
 
 void Matrix::set_value(size_t i, size_t j, int n){
-    //nums[i][j] = n;
+    data[i][j] = n;
+}
+
+int Matrix::get_value(size_t i, size_t j) const{
+    return data[i][j];
 }
 
 void Matrix::print_matrix() const {
