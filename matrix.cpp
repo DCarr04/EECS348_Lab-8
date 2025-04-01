@@ -14,7 +14,7 @@ Matrix::Matrix(size_t N) {
 }
 
 Matrix::Matrix(vector<vector<int>> nums){
-    
+    data = nums;
 }
 
 Matrix::~Matrix(){
