@@ -45,9 +45,9 @@ int Matrix::sum_diagonal_major() const{
 
     for(int i = 0; i < size; i++){
         total += data[rowCounter][i];
-
         --rowCounter; 
     }
+    return total;
     //int top
 }
 
