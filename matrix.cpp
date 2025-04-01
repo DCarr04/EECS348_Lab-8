@@ -51,6 +51,17 @@ int Matrix::sum_diagonal_major() const{
     //int top
 }
 
+int Matrix::sum_diagonal_minor() const{
+    int total = 0;
+    int rowCounter = 0;
+
+    for(int i = 0; i < size; i++){
+        total += data[rowCounter][i];
+        rowCounter++; 
+    }
+    return total;
+}
+
 void Matrix::print_matrix() const {
     // print out the matrix
 }
