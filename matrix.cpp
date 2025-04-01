@@ -1,5 +1,6 @@
 #include "matrix.hpp"
 #include <vector>
+#include <iostream>
 using namespace std;
 
 // implementation of functions declared in matrix.hpp goes here
@@ -79,4 +80,11 @@ void Matrix::swap_cols(size_t c1, size_t c2){
 
 void Matrix::print_matrix() const {
     // print out the matrix
+
+    for(int i = 0; i < size; i++){
+        for(int j = 0; j < size; j++){
+            cout << data[i][j];
+        }
+        cout << "\n" << endl;
+    }
 }
