@@ -25,11 +25,16 @@ Matrix::~Matrix(){
 
 Matrix Matrix::operator+(const Matrix &rhs) const{
     Matrix sum_Matrix(rhs.size);
-    for(int i = 0; i < rhs.size; i++){
-        for(int j = 0; j < rhs.size; j++){
-            sum_Matrix.data[i][j] = data[i][j] + rhs.data[i][j];
+    if(size == rhs.size){
+        for(int i = 0; i < rhs.size; i++){
+            for(int j = 0; j < rhs.size; j++){
+                sum_Matrix.data[i][j] = data[i][j] + rhs.data[i][j];
+            }
         }
+    }else{
+        cout << "The two matrices were not the same dimensions." << endl;
     }
+    
 
     return sum_Matrix;
 }
