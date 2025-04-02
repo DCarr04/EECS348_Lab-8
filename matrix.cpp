@@ -43,10 +43,11 @@ Matrix Matrix::operator*(const Matrix &rhs) const{
     Matrix product_matrix(rhs.size);
     if(size == rhs.size){
         for(int i = 0; i < rhs.size; i++){
-            int k = 0;
             for(int j = 0; j < rhs.size; j++){
-                product_matrix.data[i][j] = (data[i][k] * rhs.data[i][j]) + (data[i][i] * rhs.data[i][j]);
-                ++k;
+                //product_matrix.data[i][j] = (data[i][i] * rhs.data[i][j]) + (data[i][i] * rhs.data[i][j]);
+                for(int k = 0; k < rhs.size; k++){
+                    product_matrix.data[i][k] += data[i][j] * rhs.data[i][k];
+                }
             }
             //++k;
         }
