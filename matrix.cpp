@@ -43,9 +43,12 @@ Matrix Matrix::operator*(const Matrix &rhs) const{
     Matrix product_matrix(rhs.size);
     if(size == rhs.size){
         for(int i = 0; i < rhs.size; i++){
+            int k = 0;
             for(int j = 0; j < rhs.size; j++){
-                product_matrix.data[i][j] = (data[i][i] * rhs.data[i][j]) + (data[i][i] * rhs.data[i][j]);
+                product_matrix.data[i][j] = (data[i][k] * rhs.data[i][j]) + (data[i][i] * rhs.data[i][j]);
+                ++k;
             }
+            //++k;
         }
     }else{
         cout << "The two matrices are not the same dimensions." << endl;
