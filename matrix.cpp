@@ -25,7 +25,13 @@ Matrix::~Matrix(){
 
 Matrix Matrix::operator+(const Matrix &rhs) const{
     Matrix sum_Matrix(rhs.size);
-    
+    for(int i = 0; i < rhs.size; i++){
+        for(int j = 0; j < rhs.size; j++){
+            sum_Matrix.data[i][j] = data[i][j] + rhs.data[i][j];
+        }
+    }
+
+    return sum_Matrix;
 }
 
 void Matrix::set_value(size_t i, size_t j, int n){
