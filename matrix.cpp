@@ -32,7 +32,7 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
             }
         }
     }else{
-        cout << "The two matrices were not the same dimensions." << endl;
+        cout << "The two matrices are not the same dimensions." << endl;
     }
     
 
@@ -40,7 +40,12 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
 }
 
 Matrix Matrix::operator*(const Matrix &rhs) const{
-    
+    Matrix product_matrix(rhs.size);
+    if(size == rhs.size){
+
+    }else{
+        cout << "The two matrices are not the same dimensions." << endl;
+    }
 }
 
 void Matrix::set_value(size_t i, size_t j, int n){
