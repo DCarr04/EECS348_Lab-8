@@ -39,6 +39,10 @@ Matrix Matrix::operator+(const Matrix &rhs) const{
     return sum_Matrix;
 }
 
+Matrix Matrix::operator*(const Matrix &rhs) const{
+    
+}
+
 void Matrix::set_value(size_t i, size_t j, int n){
     data[i][j] = n;
 }
