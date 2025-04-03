@@ -8,14 +8,15 @@ using namespace std;
 // the class name and "::"
 
 // e.g. for the constructor:
+Matrix::Matrix() : size(0){}
 
-Matrix::Matrix(size_t N) {
+Matrix::Matrix(size_t N) : size(N){
     // initialize an empty NxN matrix
-    size = N;
+    //size = N;
 }
 
-Matrix::Matrix(vector<vector<int>> nums){
-    data = nums;
+Matrix::Matrix(vector<vector<int>> nums) : data(nums){
+    //data = nums;
 }
 
 Matrix::~Matrix(){
