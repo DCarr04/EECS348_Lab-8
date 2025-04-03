@@ -7,11 +7,11 @@
 class Matrix {
 private: 
     size_t size;
-    std::vector<std::vector<int>> data;
+    std::vector<std::vector<int> > data;
 public:
     //Matrix();
     Matrix(std::size_t N);
-    Matrix(std::vector<std::vector<int>> nums);
+    Matrix(std::vector<std::vector<int> > nums);
     ~Matrix();
 
     Matrix operator+(const Matrix &rhs) const;
