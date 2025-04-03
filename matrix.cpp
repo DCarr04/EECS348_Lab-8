@@ -28,7 +28,7 @@ Matrix::Matrix(vector<vector<int> > nums) : data(nums){
 }
 
 Matrix::~Matrix(){
-
+    
 }
 // e.g. for a member function:
 

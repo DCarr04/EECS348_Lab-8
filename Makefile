@@ -1,5 +1,5 @@
 CC := gcc
-CFLAGS := -O1 -Wall
+CFLAGS := -O1 -Wall -g -fsanitize=address
 
 
 
