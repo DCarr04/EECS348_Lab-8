@@ -27,7 +27,7 @@ int main(int argc, char *argv[]) {
                 //Matrix myMatrix(size);
 
             
-            if(sizeTracker < size){
+            if(rowCounter < size){
                 if(line.size() == size){
                     for(int i = 0; i < size; i++){
                         preInt_data.push_back(line[i]);
@@ -37,6 +37,7 @@ int main(int argc, char *argv[]) {
                     }
                     ++rowCounter;
                 }
+                //++sizeTracker;
             }else{
                 if (line.size() == size){
                     for(int j = 0; j < size; j++){
@@ -46,8 +47,8 @@ int main(int argc, char *argv[]) {
                         preInt_data.pop_back();
                     }
                     ++rowCounter;
-
                 }
+                //++sizeTracker;
             }
             
             //myMatrix(nums);
