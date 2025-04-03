@@ -16,14 +16,15 @@ Matrix::Matrix(size_t N) : size(N){
     vector<vector<int>> nums;
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
-            nums[i][j] = 0;
+            data[i][j] = 0;
         }
     }
-    data = nums;
+    //data = nums;
 }
 
 Matrix::Matrix(vector<vector<int>> nums) : data(nums){
     //data = nums;
+    size = nums.size();
 }
 
 Matrix::~Matrix(){
