@@ -55,6 +55,9 @@ int main(int argc, char *argv[]) {
             
         }
         Matrix myMatrix(nums);
+        if(nums2.size() != 0){
+            Matrix myMatrix2(nums2);
+        }
 
     }
 
