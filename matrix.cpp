@@ -13,7 +13,7 @@ using namespace std;
 Matrix::Matrix(size_t N) : size(N){
     // initialize an empty NxN matrix
     //size = N;
-    vector<vector<int>> nums;
+    vector<vector<int> > nums;
     for(int i = 0; i < size; i++){
         for(int j = 0; j < size; j++){
             data[i][j] = 0;
@@ -22,7 +22,7 @@ Matrix::Matrix(size_t N) : size(N){
     //data = nums;
 }
 
-Matrix::Matrix(vector<vector<int>> nums) : data(nums){
+Matrix::Matrix(vector<vector<int> > nums) : data(nums){
     //data = nums;
     size = nums.size();
 }
