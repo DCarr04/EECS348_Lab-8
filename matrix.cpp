@@ -45,8 +45,9 @@ Matrix Matrix::operator*(const Matrix &rhs) const{
         for(int i = 0; i < rhs.size; i++){
             for(int j = 0; j < rhs.size; j++){
                 //product_matrix.data[i][j] = (data[i][i] * rhs.data[i][j]) + (data[i][i] * rhs.data[i][j]);
+                int tracker = data[i][j];
                 for(int k = 0; k < rhs.size; k++){
-                    product_matrix.data[i][k] += data[i][j] * rhs.data[i][k];
+                    product_matrix.data[i][k] += tracker * rhs.data[j][k]; //Source: Deepseek AI
                 }
             }
             //++k;
