@@ -9,7 +9,7 @@ private:
     size_t size;
     std::vector<std::vector<int>> data;
 public:
-    Matrix();
+    //Matrix();
     Matrix(std::size_t N);
     Matrix(std::vector<std::vector<int>> nums);
     ~Matrix();

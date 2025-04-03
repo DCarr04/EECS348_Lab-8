@@ -8,7 +8,7 @@ using namespace std;
 // the class name and "::"
 
 // e.g. for the constructor:
-Matrix::Matrix() : size(0){}
+//Matrix::Matrix() : size(0){}
 
 Matrix::Matrix(size_t N) : size(N){
     // initialize an empty NxN matrix
