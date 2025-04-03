@@ -59,8 +59,9 @@ int main(int argc, char *argv[]) {
         if(nums2.size() != 0){
             Matrix myMatrix2(nums2);
         }
-
+        myMatrix.print_matrix();
     }
+    
 
     return 0;
 }
