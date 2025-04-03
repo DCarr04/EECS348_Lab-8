@@ -1,4 +1,4 @@
-CC := gcc
+CC := g++
 CFLAGS := -O1 -Wall -g -fsanitize=address
 
 
