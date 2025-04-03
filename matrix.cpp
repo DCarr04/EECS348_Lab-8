@@ -19,6 +19,7 @@ Matrix::Matrix(size_t N) : size(N){
             nums[i][j] = 0;
         }
     }
+    data = nums;
 }
 
 Matrix::Matrix(vector<vector<int>> nums) : data(nums){
