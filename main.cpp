@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
 using namespace std;
 
 int main(int argc, char *argv[]) {
@@ -17,7 +18,12 @@ int main(int argc, char *argv[]) {
             if (line.size() == 1){
                 int size = stoi(line);
                 myMatrix(size);
+
+            vector<vector<int>> data;
+            for(int i = 0; i < size; i++){
+                
             }
+            
         }
 
     }
