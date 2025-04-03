@@ -16,8 +16,8 @@ int main(int argc, char *argv[]) {
     cout << "Enter a file: ";
     cin >> file;
     ifstream myfile (file);
-    vector<vector<int>> nums;
-    vector<vector<int>> nums2;
+    vector<vector<int> > nums;
+    vector<vector<int> > nums2;
 
     if (myfile.is_open()){
         while(getline(myfile, line)){
@@ -25,7 +25,7 @@ int main(int argc, char *argv[]) {
             if (line.size() == 1){
                 size = stoi(line);
                 //Matrix myMatrix(size);
-
+            }
             
             if(rowCounter < size){
                 if(line.size() == size){
