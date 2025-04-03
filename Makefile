@@ -1,7 +1,9 @@
 CC := gcc
 CFLAGS := -O1 -Wall
 
-matrix.exe: matrix.o main.o# fill in files here
+
+
+lab8_prog.exe: matrix.o main.o
 	# fill in commands here
 	$(CC) $(CFLAGS) $^ -o $@
 
@@ -11,5 +13,4 @@ matrix.exe: matrix.o main.o# fill in files here
 .PHONY: clean
 clean:
 	rm -f *.exe
-	rm -f matrix.exe
-	rm -f main.exe
+	rm -f lab8_prog.exe
